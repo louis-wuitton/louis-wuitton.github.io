@@ -12,12 +12,12 @@
             body {
                 position: relative; 
             } 
-            #section1 {padding-top:50px;height:800px;color: #111; }
-            #section2 {padding-top:50px;height:800px;color: #111; }
+            #section1 {padding-top:10px;height:800px;color: #111; }
+            #section2 {padding-top:30px;height:800px;color: #111; }
             #section3 {padding-top:50px;height:800px;color: #111; }
             #section4 {padding-top:50px;height:800px;color: #111; }
             #section5 {padding-top:50px;height:800px;color: #111; }
-            #section6 {padding-top:50px;height:800px;color: #111; }
+            #section6 {padding-top:50px;height:400px;color: #111; }
         </style>
         <style>
             .carousel-inner > .item > img,
@@ -27,19 +27,35 @@
             }
         </style>
         <style>
+            .navbar-nav > li{
+            padding-left:25px;
+            padding-right:25px;
+            }       
+
+        </style>
+        <style>
             ul#menu {
                 padding: 53;
             }
 
             ul#menu li {
                 display: inline;
-                padding: 10px 40px
+                padding: 40px 40px
+            }
+        </style>
+        <style>
+            p.ex{
+                border: 1px;
+                margin-left:40px;
+                margin-right: 40px;
+            }
+            blockquote.ex{
+                font-family: fantasy;
             }
         </style>
     </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-    
+ 
 <nav class="navbar navbar-default">
       <div class="container-fluid">
                 <div class="navbar-header">
@@ -49,7 +65,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Louis Wu</a>
+                    <a class="navbar-brand" href="#section1">Louis Wu</a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
@@ -59,14 +75,15 @@
                         <li><a href="#section3">Projects</a></li>
                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">More about me <span   class="caret"></span></a>
                         <ul class="dropdown-menu">
-                        <li><a href="#section5">My Photography</a></li>
+                        <li><a href="#section5">My Photography and video</a></li>
                         <li><a href="#section6">Ball is life</a></li>
+                        <li><a href="#section6">Cooking is fun!</a></li>
                         </ul>
+                        <li><a href="#section6">Contact</a></li>
                     </ul>
                 </div>
     </div>
 </nav>
-
 <div id="section1" class="container-fluid">
   <div class="jumbotron">
     <div class="container">
@@ -119,41 +136,36 @@
     </a>
   </div>
 </div>
-</div>
-    
-    
-    
-<!-- About -->    
-<div id="section2" class="container-fluid">
-  <div class="jumbotron">
-      <div class="wrapper">
-          <ul id="menu">
-              <li><a href="https://www.linkedin.com/in/louistianyanwu" class="fa fa-linkedin-square" style="font-size:95px;" ></a>
-              </li>
-              <li><a href="https://www.facebook.com/tianyan987" class="fa fa-facebook-square" style="font-size:95px;"></a>
-              </li>
-              <li><a href="https://github.com/louis-wuitton" class="fa fa-github" style="font-size:95px;"></a></li>
-              <li><a href="https://www.instagram.com/louis_wuitton/" class="fa fa-instagram" style="font-size:95px;"></a></li>
-              
-              
-              <li><a href="mailto:twu1995629@g.ucla.edu" class="fa fa-envelope" style="font-size:95px;"></a></li>
-          </ul>
-      </div>
+      <br>
+    <div class="container">
+        <blockquote class="ex">
+        <p>Everyone should learn how to code, it teaches you how to think</p>
+        <footer>Steve Jobs</footer>
+        </blockquote>    
     </div>
-</div>
+    </div>
+</div>  
     
     
+<div id="section2" class="container-fluid">
+  <h1>About Me</h1>
+    <br>
+    <div class="container">
+        <center><img src="Me.jpeg" class="img-circle" alt="Cinque Terre" width="200" height="200"></center>
+        <br><br>
+        <p class="ex">"Life was like a box of chocolate, you never know what you 're gonna get". </p>      
+    </div>
+</div> 
     
     
+   
     
-    
-    
-    
-    
-<div id="section3" class="container-fluid">
-  <h1>Spring Break Trip Video</h1>
+<div id="section2" class="container-fluid">
+  <h1>Portfolio</h1>
   <center><iframe width="560" height="315" src="https://www.youtube.com/embed/DBQ9lvT-HHM" frameborder="0" allowfullscreen></iframe></center>
-</div>
+</div> 
+    
+    
 <div id="section4" class="container-fluid">
   <h1>Section 4 Submenu 1</h1>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
@@ -163,17 +175,32 @@
   <h1>The Son of Man did not come to be served, but to serve!</h1>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>    
+    
+<!-- About -->    
+<div id="section6" class="container-fluid">
+  <div class="jumbotron">
+      <div class="wrapper">
+          <h2>Connect</h2>
+          <ul id="menu"><center>
+              <li><a href="https://www.linkedin.com/in/louistianyanwu" class="fa fa-linkedin-square" style="font-size:75px;" ></a>
+              </li>
+              <li><a href="https://www.facebook.com/tianyan987" class="fa fa-facebook-square" style="font-size:75px;"></a>
+              </li>
+              <li><a href="https://github.com/louis-wuitton" class="fa fa-github" style="font-size:75px;"></a></li>
+              <li><a href="https://www.instagram.com/louis_wuitton/" class="fa fa-instagram" style="font-size:75px;"></a></li>
+              <li><a href="mailto:twu1995629@g.ucla.edu" class="fa fa-envelope" style="font-size:75px;"></a></li>
+              </center>
+          </ul>
+      </div>
+    </div>
 </div>
-    
-    
-    
-<section id="footer">
-    <div class="container">
-	<ul class="copyright">
-        <li><center>Phone: +1 (310) 849-5447 | Email: twu1995629@g.ucla.edu</center></li>
-				</ul>
-		</div>
-   </section>
+
+ <footer class="row">
+    <div class="small-12 columns"><center>Copyright Louis Wu 2016</center>
+        <br>
+    </div>
+  </footer>
     
 </body>
 </html>
