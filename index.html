@@ -13,16 +13,18 @@
                 position: relative; 
             } 
             #section1 {padding-top:10px;height:750px;color: #111; }
-            #section2 {padding-top:30px;height:500px;color: #111; }
+            #section2 {padding-top:60px;height:500px;color:aquamarine; background:url("beijing.jpg")}
             #section3 {padding-top:50px;height:300px;color: #111; }
-            #section4 {padding-top:50px;height:800px;color: #111; }
-            #section5 {padding-top:50px;height:800px;color: #111; }
-            #section6 {padding-top:50px;height:300px;color: #111; }
+            #section4 {padding-top:50px;height:700px;color: #111; }
+            #section5 {padding-top:50px;height:600px;color: #111; }
+            #section6 {padding-top:50px;height:800px;color: #111; }
+            #section7 {padding-top:50px;height:800px;color: #111; }
+            #section8 {padding-top:50px;height:300px;color: #111; }
         </style>
         <style>
             .carousel-inner > .item > img,
             .carousel-inner > .item > a > img {
-                width: 70%;
+                width: 55%;
                 margin: auto;
             }
         </style>
@@ -46,11 +48,18 @@
         <style>
             p.ex{
                 border: 1px;
-                margin-left:40px;
-                margin-right: 40px;
+                margin-left:130px;
+                margin-right: 130px;
             }
             blockquote.ex{
                 font-family: fantasy;
+            }
+        </style>
+        <style>
+            figure{
+                display: block;
+                margin-left: 70px;
+                margin-right: 70px;
             }
         </style>
     </head>
@@ -71,12 +80,12 @@
                     <ul class="nav navbar-nav">
                         <li><a href="#section1">Home</a></li>
                         <li><a href="#section2">About</a></li>
-                        <li><a href="#section3">Portfolio</a></li>
-                        <li><a href="#section4">Projects</a></li>
+                        <li><a href="#section3">Resume</a></li>
+                        <li><a href="#section4">Experiences</a></li>
+                        <li><a href="#section5">Projects</a></li>
                         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">More about me <span   class="caret"></span></a>
                         <ul class="dropdown-menu">
                         <li><a href="#section5">My Photography and video</a></li>
-                        <li><a href="#section6">Ball is life</a></li>
                         <li><a href="#section6">Cooking is fun!</a></li>
                         </ul>
                         <li><a href="#section6">Contact</a></li>
@@ -171,32 +180,60 @@
    
     
 <div id="section3" class="container-fluid">
-  <h1>Portfolio</h1>
     <br>
   <center><a href="resume.pdf" type="button" class="btn btn-default btn-lg" role ="button" width="200px" height="200px">My Resume</button>
     </a>
+    <br><br>
+    <p class="ex">Feel free to download my resume in PDF</p>
 </div> 
     
     
+    
+    
 <div id="section4" class="container-fluid">
-  <h1>My Projects</h1>
-  <div class="row">
-       <div class="small-12 medium-4 large-4 columns project">
-           
-      </div>
+  <h1>Experiences</h1>
+    <br> <br>
+  <div class="container">
+           <p class="ex">I have previously participated UCLA IEEE, which is the largest student club for Elctrical Engineering and Computer Science. During my second year at college, I built a micromouse, which is a maze solving robot that could traverse through a maze and determine the shortest path to the destination. I was also a member of general board in the year 2014-2015. My duty as a general board member was to organize Engineering activities such as All American Micromouse Competition.</p> 
+      <br> <br>
+           <p class="ex">Research is Fun! During my junior year at college, I was doing reserach for Network Research Lab at UCLA under professor Mario Gerla. My researh topic was underwater communication. Together with my reserach partners, we created some shell script programs that could activate the underwater data transmision modem. We could transmit data packets under the water. We also developed a website that allows engineers from all over the world to remotely test the reliability of our underwater communication system.</p>
+      <br><br>
+           <p class="ex">In the Summer of 2016, I will be working for a start up company called Mischief Ventured LLC, founded by a UCLA Alumini. Our goal is to build a online talent agency platform that allows screenwriters who don't have agents to submit their screenplays to Hollywood. My job will be backend development for both the website and the mobile application for the company.</p>
+    </div>
+</div>
+    
+    
+<div id="section5" class="container-fluid">
+    <h1>Projects</h1>
+    <div class="container">
+        <br>
+        <p class="ex"><center>Check out some cool projects I have done at UCLA </center></p>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+            <figure class="effect">
+                <img src="medusa_109.jpg">
+                <figcaption>
+                    <h3>Micromouse, a maze solving robot, aka Medusa</h3>
+                    <span class="icon">
+                                <span class="glyphicon glyphicon-new-window"></span>
+                    </span>
+                </figcaption>
+            </figure>
+        </div>
     </div>
 </div>
     
     
     
-<div id="section5" class="container-fluid">
+<div id="section6" class="container-fluid">
   <h1>I love taking cool pictures and making videos</h1>
     <br>
     <center><iframe width="560" height="315" src="https://www.youtube.com/embed/DBQ9lvT-HHM" frameborder="0" allowfullscreen></iframe></center>
 </div>    
     
 <!-- About -->    
-<div id="section6" class="container-fluid">
+<div id="section8" class="container-fluid">
   <div class="jumbotron">
       <div class="wrapper">
           <h2>Connect</h2>
