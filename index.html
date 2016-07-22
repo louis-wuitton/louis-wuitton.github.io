@@ -3,69 +3,164 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Louis Wu | Home </title>
         <link rel="icon" href="icon.png">
-        <link href="bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="css/style.css" type="text/css" rel="stylesheet">
         <link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet">
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+        <script>
+            $(document).ready(function(){
+            $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 1200);
+                return false;
+            }
+            }
+            });
+            }); 
+        </script>>  
+        
+        <script>
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,$Opacity:2}
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 600);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+        </script>
+           
         <style>
-            body {
-                position: relative; 
-            } 
-            #section1 {padding-top:10px;height:750px;color: #111; }
-            #section2 {padding-top:60px;height:500px;color:aquamarine; background:url("beijing.jpg")}
-            #section3 {padding-top:50px;height:300px;color: #111; }
-            #section4 {padding-top:50px;height:700px;color: #111; }
-            #section5 {padding-top:50px;height:600px;color: #111; }
-            #section6 {padding-top:50px;height:800px;color: #111; }
-            #section7 {padding-top:50px;height:800px;color: #111; }
-            #section8 {padding-top:50px;height:300px;color: #111; }
-        </style>
-        <style>
-            .carousel-inner > .item > img,
-            .carousel-inner > .item > a > img {
-                width: 55%;
-                margin: auto;
+            h2{
+                color: #595959; 
+                font-weight: bold;
+                font-size: 38px;
+                font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; 
+            }
+            
+            h3{
+                color: #d9d9d9;
+                font-size: 22px;
+                text-align: center;
+                font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; 
             }
         </style>
+        
         <style>
-            .navbar-nav > li{
-            padding-left:25px;
-            padding-right:25px;
-            }       
+         .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('images/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
 
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('images/a12.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora12l { background-position: -16px -37px; }
+        .jssora12r { background-position: -75px -37px; }
+        .jssora12l:hover { background-position: -136px -37px; }
+        .jssora12r:hover { background-position: -195px -37px; }
+        .jssora12l.jssora12ldn { background-position: -256px -37px; }
+        .jssora12r.jssora12rdn { background-position: -315px -37px; }
+        </style>
+        
+        
+        <style>
+         .infolist{
+            max-width: 860px;
+            margin-left: 70;
+            margin-right: 70px;
+            margin: 0 auto; 
+            }
+            .infolist span{
+                font-size: 45px;
+            }
+            .infolist p{
+                font-size: 20px;
+                text-align: center;
+                color: "#595959";
+            }
         </style>
         <style>
-            ul#menu {
-                padding: 53;
+            .row{
+                background-color:darkgray;
+                text-align: center;
+                color: dimgray;
+                font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+                height: 60px;
             }
+        </style>
+        <style>
+            #roundimg {
+                border: 3px solid;
+                border-color: cornsilk;
+            }
+        </style>
+</head>
 
-            ul#menu li {
-                display: inline;
-                padding: 40px 40px
-            }
-        </style>
-        <style>
-            p.ex{
-                border: 1px;
-                margin-left:130px;
-                margin-right: 130px;
-            }
-            blockquote.ex{
-                font-family: fantasy;
-            }
-        </style>
-        <style>
-            figure{
-                display: block;
-                margin-left: 70px;
-                margin-right: 70px;
-            }
-        </style>
-    </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
  
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -74,104 +169,43 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#section1">Louis Wu</a>
+                    <a class="navbar-brand" href="#section0">LW. </a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="#section1">Home</a></li>
-                        <li><a href="#section2">About</a></li>
-                        <li><a href="#section3">Resume</a></li>
-                        <li><a href="#section4">Experiences</a></li>
-                        <li><a href="#section5">Projects</a></li>
-                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">More about me <span   class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                        <li><a href="#section5">My Photography and video</a></li>
-                        <li><a href="#section6">Cooking is fun!</a></li>
-                        </ul>
-                        <li><a href="#section6">Contact</a></li>
+                        <li><a href="#section0" class="active">Home</a></li>
+                        <li><a href="#section1" >About Me</a></li>
+                        <li><a href="#section2" >Resume</a></li>
+                        <li><a href="#section3">Experiences</a></li>
+                        <li><a href="#section4">Projects</a></li>
+                        <li><a href="#section5">Contact</a></li>
                     </ul>
                 </div>
     </div>
 </nav>
-<div id="section1" class="container-fluid">
-  <div class="jumbotron">
-    <div class="container">
-  <br>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-
-      <div class="item active">
-        <img src="profile.jpg" alt="profile" width="460" height="345">
-        <div class="carousel-caption">
-          <h3>Me with Bruin Bear</h3>
-          <p>I am a fan of Ivy Cap.</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="royce.jpg" alt="royce" width="460" height="345">
-        <div class="carousel-caption">
-          <h3>Bruin forever</h3>
-          <p>I go to College at UCLA.</p>
-        </div>
-      </div>
     
-    <div class="item">
-        <img src="medusa.jpeg" alt="royce" width="460" height="345">
-        <div class="carousel-caption">
-          <h3>Micromouse</h3>
-          <p>I did this in sophomore year.</p>
-        </div>
-      </div>
-        
-      <div class="item">
-        <img src="background.jpg" alt="background" width="460" height="345">
-        <div class="carousel-caption">
-          <h3>Me and my Roommates</h3>
-          <p>We were like Beatles.</p>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+    
+ <div id="section0" class="container-fluid parallax">
+     <div class="container">
+         <h1 class="parallax">Welcome, friends! This is <font color=#ffff99>Louis Wu</font></h1>
+        <p>Computer Science Student @ UCLA</p>
+     </div>
 </div>
-      <br>
-    <div class="container">
-        <blockquote class="ex">
-        <p>"Everyone should learn how to code, it teaches you how to think."</p>
-        <footer>Steve Jobs</footer>
-        </blockquote>    
-    </div>
-    </div>
-</div>  
     
     
-<div id="section2" class="container-fluid">
-  <h1>About Me</h1>
+<div id="section1" class="container-fluid">
+  <h2>About Me</h2>
     <br>
     <div class="container">
-        <center><img src="Me.jpeg" class="img-circle" alt="Cinque Terre" width="200" height="200"></center>
-        <br><br> 
-        <p class="ex">My name is Tianyan Wu, but I usually go by Louis. I am currently a third year Computer Science student at UCLA. I love programming, design, and learning all kinds of new things. I am experienced in Web Programming, especially in HTML, CSS, Javascript and bootstrap. I am also experienced in backend development. Over the past few years I have been involved in UCLA IEEE, and Network Research Lab, and many other organizations. </p> 
+        <hr><br>
+        <center><img src="images/Me.jpeg" id="roundimg" class="img-circle" alt="Cinque Terre" width="200" height="200"></center>
+        <br><br><br>
+        <div class="threecolumns">
+            <p class="ex">Hi there, my name is Tianyan Wu, but I usually go by Louis. I will become a 4th year Computer Science student at UCLA. I love programming, and I am very enthusiastic in developing mobile/web applicaions.</p> 
+            <br>
+            <p class="ex">The most valuable thing of me is my passion to work with other people. Working with others really allows me to jump ouside of my comfort zone to meet up with people who have crative minds and helps me to grow my passion on what I do.</p>
+            <p class="ex">During my spare time, I 'd like to read books, listen to music, play basketball, and watch recipes for all kinds of food on YouTube. I love cooking, because, just like programming, I enjoy building cool things out of scratch.</p>
+        </div> 
         <br>
     </div>
 </div> 
@@ -179,83 +213,135 @@
     
    
     
-<div id="section3" class="container-fluid">
+<div id="section2" class="container-fluid">
+    <br>
+    <h3 class="ex">To get a full description of my skills, feel free to download my resume</h3>
     <br>
   <center><a href="resume.pdf" type="button" class="btn btn-default btn-lg" role ="button" width="200px" height="200px">My Resume</button>
     </a>
     <br><br>
-    <p class="ex">Feel free to download my resume in PDF</p>
 </div> 
     
     
     
     
-<div id="section4" class="container-fluid">
-  <h1>Experiences</h1>
-    <br> <br>
+<div id="section3" class="container-fluid">
+  <h2>Experiences</h2>
+   <br>
   <div class="container">
-           <p class="ex">I have previously participated UCLA IEEE, which is the largest student club for Elctrical Engineering and Computer Science. During my second year at college, I built a micromouse, which is a maze solving robot that could traverse through a maze and determine the shortest path to the destination. I was also a member of general board in the year 2014-2015. My duty as a general board member was to organize Engineering activities such as All American Micromouse Competition.</p> 
-      <br> <br>
-           <p class="ex">Research is Fun! During my junior year at college, I was doing reserach for Network Research Lab at UCLA under professor Mario Gerla. My researh topic was underwater communication. Together with my reserach partners, we created some shell script programs that could activate the underwater data transmision modem. We could transmit data packets under the water. We also developed a website that allows engineers from all over the world to remotely test the reliability of our underwater communication system.</p>
-      <br><br>
-           <p class="ex">In the Summer of 2016, I will be working for a start up company called Mischief Ventured LLC, founded by a UCLA Alumini. Our goal is to build a online talent agency platform that allows screenwriters who don't have agents to submit their screenplays to Hollywood. My job will be backend development for both the website and the mobile application for the company.</p>
-    </div>
+    <hr><br>
+      <center><a href="http://www.mischiefventured.com/"><img src="images/mischiefventured.jpg" id="roundimg" class="img-circle" alt="Cinque Terre" width="230" height="230"></a></center>
+      <br>
+      <center><h3><font color="#333333">Mischief Ventured LLC</font></h3></center>
+      <center><h4><font color="#333333">June 2016 - Present</font></h4></center>
+      <div class="box">
+          <center><p><font color="#333333">We are a startup building the first online talent agency for screenwriters to share their scripts publicly. I use Node.js, MongoDB to program the backend for this site. My job also includes doing unit testing using Mocha.</font></p></center>
+      </div>
+      <br><br><br><br>
+      <center><img src="images/bruinbear.jpg" class="img-circle" id="roundimg" alt="Cinque Terre" width="230" height="230"></a></center>
+      <br>
+      <center><h3><font color="#333333">UCLA Network Research Lab</font></h3></center>
+      <center><h4><font color="#333333">January 2016 - June 2016</font></h4></center>
+      <div class="box">
+          <center><p><font color="#333333">I was doing research under professor <a href="http://web.cs.ucla.edu/~gerla/"><font color="#1a0000">Mario Gerla</font></a>, and my research project was Underwater Data Communication. </font></p></center>
+      </div>
+      <br><br><br>
+     
+  </div>
 </div>
     
     
-<div id="section5" class="container-fluid">
-    <h1>Projects</h1>
+<div id="section4" class="container-fluid">
+    <h2><font color="#d9d9d9">Projects</h2>
     <div class="container">
-        <br>
-        <p class="ex"><center>Check out some cool projects I have done at UCLA </center></p>
-    </div>
-    <div class="row">
-        <div class="col-md-6 col-sm-12 col-xs-12">
-            <figure class="effect">
-                <img src="medusa_109.jpg">
-                <figcaption>
-                    <h3>Micromouse, a maze solving robot, aka Medusa</h3>
-                    <span class="icon">
-                                <span class="glyphicon glyphicon-new-window"></span>
-                    </span>
-                </figcaption>
-            </figure>
+        <hr>
+        <h3 class="ex">Here are some cool projects I did at UCLA</h3>
+        <br><br>
+        <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 640px; height: 400px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
         </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 640px; height: 400px; overflow: hidden;">
+
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image"  id="roundimg" src="images/organize.jpg" />
+                <div class="carousel-caption">
+                    <h3>Organise</h3>
+                    <p>An Android To-Do List App</p>
+                </div>
+            </div>
+            
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" id="roundimg" src="images/medusa.jpeg" />
+                <div class="carousel-caption">
+                    <h3>Micromouse</h3>
+                    <p>A maze solving robot that could find out the shortest path to the destination of a maze</p>
+                </div>
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <a href="http://apus.cs.ucla.edu/"><img data-u="image" id="roundimg" src="images/underwater.jpg" /></a>
+                <div class="carousel-caption">
+                <h3>Underwater Communication System</h3>
+                    <p>Data communication using acoustic commuication under water as physical layer transmission</p>
+                </div>
+            </div>
+        
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+    </div>       
+        
     </div>
 </div>
     
     
-    
-<div id="section6" class="container-fluid">
-  <h1>I love taking cool pictures and making videos</h1>
+ 
+<div id="section5" class="container-fluid">
+     <h2>Connect</h2>
+    <div class="container"><hr>
+        <h3 class="ex"><font color="#595959">If you would like to speak to me about any opportunities, or just life, feel free to contact me!</font></h3>
+    </div>
+   <br><br>
+    <div class="infolist">
+        <p></font><img src="images/address.png" height="38" weight="38"> <font color="#595959">425 Veteran Avenue, CA, 90024</font></p>
+        <p></font><img src="images/icon-phone.png" height="35" weight="35"> <font color="#595959"> &nbsp; (310)-849-5447</font></p>
+        <p></font><img src="images/envelop.png" height="38" weight="38"> <font color="#595959"> &nbsp; <a href="mailto:twu1995629@g.ucla.edu">twu1995629@g.ucla.edu</a></font></p>
+    </div>
     <br>
-    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/DBQ9lvT-HHM" frameborder="0" allowfullscreen></iframe></center>
-</div>    
-    
-<!-- About -->    
-<div id="section8" class="container-fluid">
-  <div class="jumbotron">
       <div class="wrapper">
-          <h2>Connect</h2>
           <ul id="menu"><center>
-              <li><a href="https://www.linkedin.com/in/louistianyanwu" class="fa fa-linkedin-square" style="font-size:65px;" ></a>
+              <li><a href="https://www.linkedin.com/in/louistianyanwu"><img src="images/linkedin.png" height="42" weight="42"></a>
               </li>
-              <li><a href="https://www.facebook.com/tianyan987" class="fa fa-facebook-square" style="font-size:65px;"></a>
+              <li><a href="https://www.facebook.com/tianyan987"><img src="images/facebook-icon.png" height="40" weight="40"></a>
               </li>
-              <li><a href="https://github.com/louis-wuitton" class="fa fa-github" style="font-size:65px;"></a></li>
-              <li><a href="https://www.instagram.com/louis_wuitton/" class="fa fa-instagram" style="font-size:65px;"></a></li>
-              <li><a href="mailto:twu1995629@g.ucla.edu" class="fa fa-envelope" style="font-size:65px;"></a></li>
+              <li><a href="https://github.com/louis-wuitton"><img src="images/Octocat.png" height="42" weight="42"></a>
+              </li>
+              <li><a href="https://www.instagram.com/louis_wuitton/"><img src="images/instagram-icon.png" height="40" weight="40"></a>
+              </li>
               </center>
           </ul>
       </div>
-    </div>
-</div>
 
+    
+<br><br>
  <footer class="row">
-    <div class="small-12 columns"><center>Copyright Louis Wu 2016<br>Phone:+1(310)-849-5447 <br>Email:twu1995629@g.ucla.edu</center>
-        <br>
+     <br>
+     <div class="small-12 columns"><center>COPYRIGHT © 2016 LOUIS WU</center>
     </div>
   </footer>
+</div>
+
+<br>
+    
+    
     
 </body>
 </html>

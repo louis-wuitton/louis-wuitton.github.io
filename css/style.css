@@ -1,0 +1,99 @@
+
+        body {
+            position: relative; 
+        }   
+        #section0 {padding-top:0px;height:560px;}
+        #section1 {padding-top:50px;height:670px;color: #111; background-color: #bfbfbf}
+        #section2 {padding-top:50px;height:300px;color: #111; background-color: #4d4d4d}
+        #section3 {padding-top:50px;height:1130px;color: #111; background-color: #bfbfbf}
+        #section4 {padding-top:50px;height:700px;color: #111; background-color: #4d4d4d}
+        #section5 {padding-top:40px;height:570px;color: #111; background-color: #bfbfbf}
+       
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        
+        .parallax {
+            height: 270px;
+            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/Beijing.jpg");
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+           
+        }
+        .parallax h1 {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 48px;
+            line-height: 420px;
+            font-weight: 100;
+            font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .parallax p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 28px;
+            text-align: center;
+        }
+       
+        .threecolumns {
+                -webkit-column-count: 3; /* Chrome, Safari, Opera */
+                -moz-column-count: 3; /* Firefox */
+                column-count: 3;
+        }
+       
+        .btn{
+            text-align: center;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .navbar-nav > li{
+            padding-left:25px;
+            padding-right:25px; 
+            padding-top: 4px;
+            padding-bottom: 4px;
+            font-size: 18px;
+            font-family: Papyrus, fantasy;
+            text-align: center;
+        }   
+        .navbar-brand {
+            padding-left:25px;
+            padding-right:145px; 
+            padding-top: 20px;
+            padding-bottom: 4px;
+            font-size: 35px;
+            font-family: Papyrus, fantasy;
+            text-align: center;
+        }
+        
+        ul#menu {
+             padding: 53;
+        }
+
+        ul#menu li {
+            display: inline;
+            padding: 40px 40px
+        }
+        
+        p.ex{
+            color: #595959;
+            font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; 
+            border: 1px;
+        }
+
+        blockquote.ex{
+            font-family: fantasy;
+        }
+        
+        .box p{
+            text-align: center;
+            margin: 0;
+            margin-left: 148px;
+            margin-right: 148px;
+        }
+       
+        
+      
