@@ -1,6 +1,7 @@
 
         body {
             position: relative; 
+            background-color: "#bfbfbf";
         }   
         #section0 {padding-top:0px;height:560px;}
         #section1 {padding-top:50px;height:670px;color: #111; background-color: #bfbfbf}
