@@ -39,7 +39,6 @@
             background-position: 50% 50%;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-size: contain;
         }
         .parallax h1 {
             color: rgba(255, 255, 255, 0.8);
