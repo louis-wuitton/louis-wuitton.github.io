@@ -10,6 +10,23 @@
         #section4 {padding-top:50px;height:700px;color: #111; background-color: #4d4d4d}
         #section5 {padding-top:40px;height:600px;color: #111; background-color: #bfbfbf}
        
+        
+        @media only screen 
+        and (min-device-width: 414px)
+        and (max-device-width: 736px)
+        and (orientation: landscape)
+        {
+            .parallax {
+            height: 270px;
+            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/Beijing2.jpg");
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+           
+            }
+        }
+    
+
         .container {
             max-width: 960px;
             margin: 0 auto;
