@@ -17,9 +17,9 @@
         and (orientation: landscape)
         {
             .parallax {
-            height: 270px;
+          
             background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/Beijing2.jpg");
-            background-position: 50% 50%;
+            background-position: 0% 0%;
             background-repeat: no-repeat;
             background-attachment: fixed;
                 
@@ -36,7 +36,7 @@
         .parallax {
             height: 270px;
             background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/Beijing.jpg");
-            background-position: 50% 50%;
+            background-position: 50% 0%;
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
