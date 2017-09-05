@@ -1,0 +1,43 @@
+ul {
+    overflow: auto;
+}
+ 
+ul li {
+    list-style-type: none;
+    float: left;
+    padding-left: 15px;
+}
+ 
+ul li a i {
+    background: #205D7A;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 10px;
+    padding-top: 23%;
+    padding-left: 2%;
+    transition: all 0.2s ease-in-out;
+}
+.fa-facebook {
+    background:#3b5998
+} 
+.fa-linkedin {
+    background:#007bb6
+}
+.fa-twitter {
+    background:#00aced
+}
+.fa-github {
+    background:#514B4B
+}
+
+ul li a i:hover {
+    opacity: .7;
+}
+
+.icons {
+    text-align: center;
+}
